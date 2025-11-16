@@ -271,7 +271,7 @@
         <div class="info-box">
             <h3>⚙️ Settings:</h3>
             <ul>
-                <li>Bit Duration: 50ms</li>
+                <li>Bit Duration: 100ms (SLOWER for reliability)</li>
                 <li>Protocol: START(5×ON) + DATA + STOP(5×OFF)</li>
                 <li>Encoding: 8-bit ASCII</li>
             </ul>
@@ -279,7 +279,7 @@
     </div>
     
     <script>
-        const BIT_DURATION = 50; // Must match Arduino receiver (50ms)
+        const BIT_DURATION = 100; // Must match Arduino receiver (100ms)
         let videoStream = null;
         let videoTrack = null;
         let isTransmitting = false;
